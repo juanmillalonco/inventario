@@ -28,8 +28,11 @@ if(!$resultado)
 }
 else
 {
-	echo "ingresado correctamente";
-	return();
+	echo "Informacion agregada correctamente";
+?>
+<a href="index.php">Volver</a>
+<?php
+
 }
 
 ?>
