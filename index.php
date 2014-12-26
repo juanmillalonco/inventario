@@ -23,13 +23,13 @@
     	<form action="procesa1.php" method="post">
     	<fieldset>
     		<p>Elemento</p> 
-    		<input type="text" name="elemento" placeholder="Ingrese un elemento" />
+    		<input type="text" name="elemento" placeholder="Ingrese un elemento" required/>
     		<br />
     		<p>Cantidad</p> 
-    		<input type="number" name="cantidad" placeholder="Ingrese la cantidad" />
+    		<input type="number" name="cantidad" placeholder="Ingrese la cantidad" required />
     		<br />
     		<p>Categoria</p> 
-    		<input list="categoria" name="categoria" placeholder="Seleccione una categoria">
+    		<input list="categoria" name="categoria" placeholder="Seleccione una categoria" required>
     		     <datalist id="categoria">
     		        <option value="Materiales y Herramientas">
     		        <option value="Vestuario">
@@ -38,7 +38,7 @@
     		<br />
     		<p>Observacion</p> 
     		<textarea name="observacion" placeholder="alguna observacion que agregar">
-    		
+
     	    </textarea>
     	</fieldset>
     		<br/>

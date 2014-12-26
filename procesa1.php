@@ -19,20 +19,20 @@ $observacion = $_POST['observacion'];
 
 
 $query1= "INSERT INTO elementos VALUES (NULL,'$elemento','$cantidad','$categoria','$observacion')";
+$query2= "SELECT elemento FROM elementos";
+
 
 $resultado = mysql_query($query1,$con);
+$resultado2 = mysql_query($query2,$con);
 
-if(!$resultado)
+if(mysql_fetch_row($resultado2)>=1)
 {
-	die("error no se puede realizar la consultar");
+	echo "el elemento ya existe";
 }
-else
+elseif(!$resultado)
 {
-	echo "Informacion agregada correctamente";
-?>
-<a href="index.php">Volver</a>
-<?php
+    echo "elemento ingresado";
+}
 
-}
 
 ?>
