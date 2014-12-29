@@ -22,8 +22,8 @@
     		        <option value="Zona Primaria">	
     		     </datalist>
 			<br />
-			<p>Nro de Placa</p>
-			<input type="text" name="placa" placeholder="Ingrese el numero de la placa" required />
+			<p>Numero de Placa</p>
+			<input type="number" name="placa" placeholder="Ingrese el numero de la placa" required />
 			<br/>
 			<p>Descripcion</p>
 			<input type="text" name="descripcion" placeholder="Ingrese la descripcion" required />
@@ -45,13 +45,13 @@
     		     </datalist>
 			<br />
 			<p>Nro de Serie</p>
-			<input type="text" name="serie" placeholder="ingrese el numero de serie" />
+			<input type="text" name="serie" placeholder="Ingrese el numero de serie" />
 			<p>Observacion</p>
 			<textarea name="observacion" placeholder="¿Alguna observacion?">
 				
 			</textarea>
 			<br/>
-			<input type="submit" value="agregar" />
+			<input type="submit" value="Agregar" />
 		</fieldset>
 		
 	</form>
